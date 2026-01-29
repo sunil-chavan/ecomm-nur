@@ -46,9 +46,9 @@ const blogPosts = [
 export function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [cartCount] = useState(2);
-  const [activeTab, setActiveTab] = useState<'home' | 'shop' | 'blogs'>('home');
+  const [activeTab, setActiveTab] = useState('home');
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [viewMode, setViewMode] = useState('grid');
 
   const filteredPlants = selectedCategory === 'All' 
     ? allPlants 
